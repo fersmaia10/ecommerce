@@ -1,0 +1,13 @@
+.cabecalho {
+    background-color: black;
+    text-align: center;
+    border: 2px;
+    height: 60px;
+
+}
+
+.cabecalho a{
+    color: rgb(173, 237, 122);
+    text-decoration: none;
+    margin-right: 10px;
+}

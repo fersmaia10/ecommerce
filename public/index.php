@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DevStore</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <?php require_once __DIR__ . "/../app/Model/estoque.php"?>
 <body>
-    <section id="cabecalho">
+    <section id="cabecalho" class="cabecalho">
         <a href="index.php">DevStore</a>
         <input type="search" placeholder="Busque seu produto:">
         <a href="">Inscreva-se</a> |
