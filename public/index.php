@@ -17,18 +17,16 @@
     </section>
     <h2>Itens disponíveis</h2>
     <section id="produtos">
-        <div>
-            <p>Mouse Gamer</p>
-            <p>Quantidade: 3</p>
-            <p>R$ 79,90</p>
+        <div class="container">
+            <?php foreach ($db as $item): ?>
+            <div class="card">
+                <img src="<?= $item["foto"] ?>" alt="<?= $item["nomeProduto"] ?>" width="150">
+                <p><?= $item["nomeProduto"]?></p>
+                <p><?= $item["preco"]?></p>
+                <p><?= "Estoque: " . $item["quantidade"]?></p>
+            </div>
+            <?php endforeach ?>
         </div>
-        <?php foreach ($db as $item): ?>
-        <div>
-            <p><?= $item["nomeProduto"]?></p>
-            <p><?= $item["preco"]?></p>
-            <p><?= "Estoque: " . $item["quantidade"]?></p>
-        </div>
-        <?php endforeach ?>
     </section>
 </body>
 </html>
